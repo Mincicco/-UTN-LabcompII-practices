@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+     <!-- Encabezado -->
+     <header>
+        <h1>Rincon de Ajedrez</h1>
+    </header>
+    <div class="container">
+        <!-- Navegación / cotenedor izquierdo -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Contenedor principal -->
+        <main>
+           <form action="">
+                <table>
+                    <tr>
+                        <th><label for="nombre">Nombre</label></th>
+                        <td><input type="text" id="nombre" required /></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email">Email</label></th>
+                        <td><input type="text" id="email" required /></td>
+                    </tr>
+                    <tr>
+                        <th><label for="edad">Edad</label></th>
+                        <td><input type="number" id="edad" /></td>
+                    </tr>
+                    <tr>
+                        <th><label for="color">Color preferido</label></th>
+                        <td><input type="color" id="color" /></td>
+                    </tr>
+                    <tr>
+                        <th><label for="comentario">comentarios</label></th>
+                        <td><textarea name="comentario" id="comentario" cols="30" rows="10" minlength="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th><input type="button" value="Enviar"></th>
+                    </tr>
+                    
+                    
+            </table>
+           </form>
+           <br>
+           <div class="mapa">
+            <iframe 
+            width="560"
+            height="315"
+            src="https://www.google.com.ar/maps/place/Universidad+Tecnol%C3%B3gica+Nacional+%7C+Facultad+Regional+Rosario/@-32.953808,-60.6401331,15z/data=!4m5!3m4!1s0x95b7ab11d0eb49c3:0x11f1d3d54f950dd0!8m2!3d-32.9544347!4d-60.6437319" 
+            frameborder="0"
+            allow=
+            "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            ></iframe>
+
+           </div>
+        </main>
+        <!-- Contenedor secundario / derecho -->
+        <div class="right">
+            <h2>Info</h2>
+            <p>En estos momentos estamos remodelando la pagina, pedimos que sean pacientes</p>
+        </div>
+    </div>
+    <!-- Pie de Página-->
+    <footer>
+        <p>© copyright fanaticosdelchess.com</p>
+</body>
+</html>
