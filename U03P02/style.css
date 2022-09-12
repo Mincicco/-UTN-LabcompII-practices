@@ -42,3 +42,9 @@ nav {
 .nav-item:hover a {
     color: black;
     }
+.nav-item-login{
+    text-decoration: underline;
+    border-style: solid;
+    border-width: 2px;
+    color: black;
+}
