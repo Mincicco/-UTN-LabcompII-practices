@@ -1,6 +1,7 @@
 var operandoa;
 var operandob;
 var operacion;
+//guardamos los elementos del html en variables para cuando sean seleccionados
 function init() {
     var resultado = document.getElementById("resultado");
     var reset = document.getElementById("reset");
@@ -24,7 +25,7 @@ function init() {
 
 //Eventos de click
 uno.onclick = function (e) {
-    resultado.textContent +=  "1";
+    resultado.textContent +=  "1"; //cuando se clicke la variable uno, se le va a asignar el string "1"
 }
 dos.onclick = function (e) {
     resultado.textContent +=  "2";
@@ -58,7 +59,7 @@ reset.onclick = function (e) {
     resetear();
 }
 suma.onclick = function (e) {
-    operandoa = resultado.textContent;
+    operandoa = resultado.textContent; // guarda en la variable operandoa el elemento que hayamos clickeado y luego se llama a la funcion limpiar para volver a repetir 
     operacion = "+";
     limpiar();
 }
