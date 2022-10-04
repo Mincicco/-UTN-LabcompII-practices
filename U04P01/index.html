@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <button id="boton" onclick="mayor()">Presionar</button>
+    <script>
+        var b = document.getElementById("boton");
+        
+        function mayor(){
+            var x = document.getElementById("num1");
+            var y = document.getElementById("num2");
+            numx = x.value;
+            numy = y.value
+            if(numx < numy){
+                alert("El mayor es " + numy);
+            }else{
+                alert("El mayor es " + numx);
+            }
+        }
+    </script>
+</body>
+</html>

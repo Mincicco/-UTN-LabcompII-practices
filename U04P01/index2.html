@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <label for="name">Nombre</label>
+    <input type="text" id="name">
+    <label for="apellido">Apellido</label>
+    <input type="text" id="apellido">
+    <button id="boton" onclick="conca()">Concatenar</button>
+    <p id="final"></p>
+
+    <script>
+
+        var boton = document.getElementById("boton");
+
+        function conca(){
+            var nombre = document.getElementById("name");
+            var apellido = document.getElementById("apellido");
+            nombre1=nombre.value;
+            apellido1=apellido.value;
+            var nada = nombre1 +" "+ apellido1;
+            document.getElementById("final").innerHTML = nada;
+        }
+    </script>
+</body>
+</html>
